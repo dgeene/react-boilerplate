@@ -1,21 +1,10 @@
 var path = require('path');
 
+
 module.exports = {
-    entry: './app/index.js',
-    module: {
-        loaders: [
-            {
-                test: /\.js?$/,
-                exclude: /(node_modules|bower_components)/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['es2015', 'react']
-                }
-            }
-        ]
-    },
+    entry: './src/index.js',
     output: {
-        filename: 'bundle.js',
+        filename: 'js/bundle.js',
         path: path.resolve(__dirname, 'dist'),
         publicPath: 'dist' // used when webpack-dev-server has public ip. allows reloading
     },
