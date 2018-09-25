@@ -1,9 +1,9 @@
-# Reactjs boilderplate
+# ReactJS Boilerplate
 A webapp that uses React.js
 
 ## Setup
 
-After checking out you need to run `npm install.
+After checking out, run `npm install.
 
 ## Developing
 
