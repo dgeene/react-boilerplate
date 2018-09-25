@@ -2,24 +2,25 @@
   "name": "react-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "./node_modules/.bin/webpack",
-    "serve": "./node_modules/.bin/webpack-dev-server --content-base dist/",
-    "serve-public": "./node_modules/.bin/webpack-dev-server --content-base dist/ --host 0.0.0.0",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "webpack": "^4.20.1",
+    "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.1.9"
   },
-  "dependencies": {
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "./node_modules/.bin/webpack",
+    "serve": "./node_modules/.bin/webpack-dev-server --content-base dist/",
+    "serve-public": "./node_modules/.bin/webpack-dev-server --content-base dist/ --host 0.0.0.0",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
