@@ -9,3 +9,6 @@ After checking out, run `npm install.
 
 ### Building
 This project uses webpack and babel. Run `npm run build` This will concatenate the javascript into one file and babel will transpile es6 into more browser friendly es2015.
+
+## ToDo
+ - setup the jest tests
