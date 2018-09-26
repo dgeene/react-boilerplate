@@ -20,7 +20,7 @@
     "webpack-dev-server": "^3.1.9"
   },
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --mode development --open",
     "build": "./node_modules/.bin/webpack",
     "serve": "./node_modules/.bin/webpack-dev-server --content-base dist/",
     "serve-public": "./node_modules/.bin/webpack-dev-server --content-base dist/ --host 0.0.0.0",
