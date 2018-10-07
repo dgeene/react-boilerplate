@@ -1,7 +1,15 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const plugins = [
+  new CopyWebpackPlugin([
+    {
+      from: "./public",
+      to: "./",
+      ignore: ["fonts/**/*"]
+    }
+  ]),
   new HtmlWebpackPlugin({
     inject: true,
     template: "./public/index.html",
